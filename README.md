@@ -1,3 +1,5 @@
+# Description
+  Generate the math expression LATEX sequence according to the handwritten math expression image.
 # How to run
   ```
     git clone https://github.com/win5923/TrOCR-Handwritten-Mathematical-Expression-Recognition.git
