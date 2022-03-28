@@ -15,6 +15,11 @@
   >On CHROME 2016 dataset CER = 0.353<br>
   >On CHROME 2014 dataset Accuracy = 0.158<br>
   >On CHROME 2014 dataset Accuracy = 0.143<br>
+# Improve
+  On CROHME 2014 test dataset the Accuracy is worst below image's model.
+  ![image](https://user-images.githubusercontent.com/56353753/160466308-0fbc4d84-f3e0-4f6a-957e-d42fd32d59fd.png)
+  
+
 
 Thanks @NielsRogge's Notebook so much.It's very helpful.<br>
 https://github.com/NielsRogge/Transformers-Tutorials/blob/master/TrOCR/Fine_tune_TrOCR_on_IAM_Handwriting_Database_using_Seq2SeqTrainer.ipynb
