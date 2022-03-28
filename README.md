@@ -5,7 +5,7 @@
     pip install -q datasets jiwer
   ```
 # Train
- for shell you can use screen and run train2.py\n
+ for shell you can use screen and run train2.py<br>
  for Jupyter you can run train.ipynb
  
 # Evaluate
