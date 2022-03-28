@@ -13,10 +13,10 @@
 
 import pandas as pd
 
-df = pd.read_table('./data2/train/caption.txt', header=None) #fwf
+df = pd.read_table('./data/train/caption.txt', header=None) #fwf
 df.rename(columns={0: "file_name", 1: "text"}, inplace=True)
 
-df['file_name']= df['file_name'].apply(lambda x: x+'.bmp')
+df['file_name']= df['file_name'].apply(lambda x: x+'.jpg')
 df = df.dropna()
 df
 
@@ -25,10 +25,10 @@ df
 
 
 
-df2 = pd.read_table('./data2/2014/caption.txt', header=None) #fwf
+df2 = pd.read_table('./data/2014/caption.txt', header=None) #fwf
 df2.rename(columns={0: "file_name", 1: "text"}, inplace=True)
 
-df2['file_name']= df2['file_name'].apply(lambda x: x+'.bmp')
+df2['file_name']= df2['file_name'].apply(lambda x: x+'.jpg')
 df2 = df2.dropna()
 #fliter = (df2["file_name"] == "505_em_51.bmp")
 df2
@@ -100,10 +100,10 @@ class IAMDataset(Dataset):
 from transformers import TrOCRProcessor
 
 processor = TrOCRProcessor.from_pretrained("microsoft/trocr-base-handwritten") #"microsoft/trocr-base-handwritten"
-train_dataset = IAMDataset(root_dir='./data2/train/',
+train_dataset = IAMDataset(root_dir='./data/train/',
                            df=train_df,
                            processor=processor)
-eval_dataset = IAMDataset(root_dir='./data2/2014/', #'./data2/2014/'
+eval_dataset = IAMDataset(root_dir='./data/2014/', #'./data2/2014/'
                            df=test_df,
                            processor=processor)
 
@@ -167,11 +167,13 @@ model.config.vocab_size = model.config.decoder.vocab_size
 
 # set beam search parameters
 model.config.eos_token_id = processor.tokenizer.sep_token_id
-#model.config.max_length = 200 # origin 64
+model.config.max_length = 490  
 model.config.early_stopping = True
 #model.config.no_repeat_ngram_size = 2
 #model.config.length_penalty = 2.0
 model.config.num_beams = 10
+
+#原本只有 model.config.early_stopping = True model.config.num_beams = 10
 
 
 # In[14]:
@@ -185,7 +187,7 @@ training_args = Seq2SeqTrainingArguments(
     per_device_train_batch_size=8, #origin 8
     per_device_eval_batch_size=1, #origin 8
     fp16=True, 
-    output_dir="./checkpoint_eval_2014_small_stage1/",
+    output_dir="./checkpoint_eval_2014_small_stage1_new_image/",
     logging_steps=2,
     save_steps=1000,
     eval_steps=500,
@@ -244,7 +246,7 @@ trainer = Seq2SeqTrainer(
     eval_dataset=eval_dataset,
     data_collator=default_data_collator,
 )
-trainer.train("./checkpoint_eval_2014_small_stage1/checkpoint-27000") #"checkpoint-9000"
+trainer.train() #"checkpoint-9000"
 
 
 # Inference
