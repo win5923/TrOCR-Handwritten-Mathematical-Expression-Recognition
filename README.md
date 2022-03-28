@@ -9,7 +9,7 @@
  for Jupyter you can run train.ipynb
  
 # Evaluate
-  >On CHROME 2014 dataset CER = 0.365
-  >On CHROME 2016 dataset CER = 0.353
-  >On CHROME 2014 dataset Accuracy = 0.158
-  >On CHROME 2014 dataset Accuracy = 0.143
+  >On CHROME 2014 dataset CER = 0.365<br>
+  >On CHROME 2016 dataset CER = 0.353<br>
+  >On CHROME 2014 dataset Accuracy = 0.158<br>
+  >On CHROME 2014 dataset Accuracy = 0.143<br>
