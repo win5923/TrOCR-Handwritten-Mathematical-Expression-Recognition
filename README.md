@@ -14,5 +14,5 @@
   >On CHROME 2014 dataset Accuracy = 0.158<br>
   >On CHROME 2014 dataset Accuracy = 0.143<br>
 
-Thanks @NielsRogge's Notebook so much.It's very helpful.
+Thanks @NielsRogge's Notebook so much.It's very helpful.<br>
 https://github.com/NielsRogge/Transformers-Tutorials/blob/master/TrOCR/Fine_tune_TrOCR_on_IAM_Handwriting_Database_using_Seq2SeqTrainer.ipynb
