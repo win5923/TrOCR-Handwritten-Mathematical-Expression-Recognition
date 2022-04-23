@@ -19,6 +19,7 @@
   On CROHME 2014 test dataset the Accuracy is worst below image's model.
   ![image](https://user-images.githubusercontent.com/56353753/160466308-0fbc4d84-f3e0-4f6a-957e-d42fd32d59fd.png)
   
+  You can try to use the same processor model as the model,the effect of different models 
 
 
 Thanks @NielsRogge's Notebook so much.It's very helpful.<br>
