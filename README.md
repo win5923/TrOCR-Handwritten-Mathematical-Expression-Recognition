@@ -14,7 +14,7 @@
     python train2.py
     python train.ipynb
   ```
-#Inference
+# Inference
   use predict.py or test.py For inference on new images.
 # Evaluate
   >On CHROME 2014 dataset CER = 0.365<br>
