@@ -17,9 +17,7 @@
 # Inference
   use predict.py or test.py For inference on new images.
 # Evaluate
-  >On CHROME 2014 dataset CER = 0.365<br>
   >On CHROME 2016 dataset CER = 0.193<br>
-  >On CHROME 2014 dataset Accuracy = 0.158<br>
   >On CHROME 2016 dataset Accuracy = 0.306<br>
 # Improve
   On CROHME 2014 test dataset the Accuracy is worst below image's model.
