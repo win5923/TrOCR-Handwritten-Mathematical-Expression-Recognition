@@ -21,7 +21,7 @@
   >On CHROME 2016 dataset Accuracy = 0.306<br>
 
 # Improve
-  On CROHME 2014 test dataset the Accuracy is worst below image's model.
+  On CROHME 2016 test dataset the Accuracy is worst below image's model.
   ![image](https://user-images.githubusercontent.com/56353753/172812273-075e46aa-cb7d-4c2c-9436-3661c202dc39.png)
   
   You can try to use the same processor model as the model,the effect of different models is very poor.
