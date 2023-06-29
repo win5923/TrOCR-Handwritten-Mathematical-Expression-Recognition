@@ -3,8 +3,8 @@
 # How to run
   ```
     git clone https://github.com/win5923/TrOCR-Handwritten-Mathematical-Expression-Recognition.git
-    pip install -q transformers
-    pip install -q datasets jiwer
+    pip install transformers
+    pip install datasets jiwer
     pip install sentencepiece
   ```
 # Train
