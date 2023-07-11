@@ -15,7 +15,7 @@
     python train.ipynb
   ```
 # Inference
-  use predict.py or test.py For inference on new images.
+  use predict.py or test.py to inference on new images.
 # Evaluate
   >On CHROME 2016 dataset CER = 0.193<br>
   >On CHROME 2016 dataset Accuracy = 0.306<br>
